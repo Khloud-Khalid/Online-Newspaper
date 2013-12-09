@@ -1,0 +1,64 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="newscss.css">
+</head>
+<body>
+<h1>The Daily News</h1>
+<hr style="height:0.1em;width:84em;border:1px solid #000;background-color:#c00;" />
+<h3>vol:MMZX</h3>
+<hr style="height:0.1em;width:84em;border:1px solid #000;background-color:#c00;" />
+<div>
+Exceptionally high levels of PCBs have been measured in sea otters that died along the California coast of infectious diseases, suggesting that accumulating toxins compromised the mammals' immune systems. Marine pollution seems to be why populations of the California subspecies of sea otter have not rebounded to the extent their relatives to the north have.
+Female sea otters picked up dead or dying off of beaches from San Francisco to Santa Barbara between 1992 and 2002 were all contaminated with toxins, although concentrations varied enormously among individuals. Those otters with the highest levels of polychlorinated biphenyls (PCBs) and polybrominated diphenyl ethers (PBDEs) in their livers also had other characteristics in common.
+Many otters had enough PCBs to interfere with their physiological functioning. The greatest PCB concentrations were in sea otters that died of infectious diseases.
+Often dead sea otters also showed obvious signs of starvation. The most severely emaciated animals had the highest levels of PBDEs and PCBs. This points to the toxins ultimately interfering with normal physiological processes involving the breakdown of fat.
+<hr style="height:0.1em;width:20em;border:1px solid #000;background-color:#c00;"/>
+<canvas id="myCanvas" width="200" height="100"
+style="border:1px solid #000000;">
+</canvas>
+
+</div>
+
+
+<span style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br> 
+<video id="video1" width="420" >
+  <source src="Wildlife-in-South-Australia.mp4" type="video/mp4">
+</video>
+</span>
+<h2>News</h2>
+
+
+<script> 
+var myVideo=document.getElementById("video1"); 
+
+function playPause()
+{ 
+if (myVideo.paused) 
+  myVideo.play(); 
+else 
+  myVideo.pause(); 
+} 
+
+function makeBig()
+{ 
+myVideo.width=560; 
+} 
+
+function makeSmall()
+{ 
+myVideo.width=320; 
+} 
+
+function makeNormal()
+{ 
+myVideo.width=420; 
+} 
+</script> 
+
+</body>
+</html>

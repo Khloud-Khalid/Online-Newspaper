@@ -1,0 +1,58 @@
+body{
+   background:url(news.jpg);
+background-size:100% 100%;
+background-repeat:no-repeat; 
+}
+ div{
+-webkit-column-count: 3; 
+-webkit-column-rule: 2px solid #bbb;
+-webkit-column-gap: 2em;
+}
+h1
+{
+text-align:center;
+}
+h3{
+    text-align:left;
+    font-size:14px;
+}
+h8{
+    text-align:center;
+    font-size:14px;
+}
+
+@font-face
+{
+font-family: Nobile-Medium;
+src: url(Nobile-Medium.ttf);
+font-weight:bold;
+font-stretch:expanded;
+}
+
+div
+{
+font-family:Nobile-Medium;
+}
+
+@-webkit-keyframes pulse {
+ from {
+   opacity: 0.0;
+   font-size: 100%;
+ }
+ to {
+   opacity: 1.0;
+   font-size: 200%;
+ }
+}
+
+h2 {
+  -webkit-animation-name: pulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+}
+.border{
+border:2px solid;
+border-radius:25px;
+}
